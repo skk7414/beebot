@@ -147,7 +147,7 @@ client.on("message", (message) => {
     } else {
       return message.reply("채널에서 실행해주세요.")
     }
-  } else if (message.content.startsWith("야 꿀벌 넣을께")) {
+  } else if (message.content.startsWith("!토이")) {
     if (message.channel.type == "dm") {
       return message.reply("dm에서 사용할 수 없는 명령어 입니다.")
     }
