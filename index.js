@@ -72,7 +72,7 @@ client.on("message", (message) => {
       { name: "기호", desc: "embed 예제1" },
       { name: "야 꿀벌 전체공지", desc: "dm으로 전체 공지 보내기" },
       { name: "야 꿀벌 전체공지2", desc: "dm으로 전체 embed 형식으로 공지 보내기" },
-      { name: "!토이", desc: "텍스트 지움" },
+      { name: "야 꿀벌 넣을께", desc: "텍스트 지움" },
       { name: "야 꿀벌 초대코드", desc: "해당 채널의 초대 코드 표기" },
       { name: "야 꿀벌초대코드2", desc: "봇이 들어가있는 모든 채널의 초대 코드 표기" },
     ]
