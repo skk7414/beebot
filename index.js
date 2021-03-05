@@ -210,10 +210,59 @@ function changeCommandStringLength(str, limitLen = 8) {
 
   return tmp
 }
-if (message.content == "잠수시작") {
-  return message.reply("@everyone 잠수를 시작했습니다")
-}
-if (message.content == "잠수해제") {
-  return message.reply("@everyone 잠수를 해제했습니다")
-}
+client.on('message' ,msg=>{
+  if(msg.content === "잠수시작"){
+    msg.reply("@everyone 잠수를 시작했습니다")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "잠수해제"){
+    msg.reply("@everyone 잠수를 해제하셨습니다")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "섹스시작"){
+    msg.reply("@everyone 섹스를 시작하셨습니다")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "섹스종료"){
+    msg.reply("@everyone 섹스를 종료하셨습니다")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "핵"){
+    msg.reply("@everyone 언로드,우디르,랜계,솔,길로틴,테드,테라,카키,오토샷 구매문의:토이#3656")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "언로드"){
+    msg.reply("@everyone 언로드 구매문의:토이#3656")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "우디르"){
+    msg.reply("@everyone 우디르 구매문의:토이#3656")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "솔"){
+    msg.reply("@everyone 솔 구매문의:토이#3656")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "오토샷"){
+    msg.reply("@everyone 오토샷 구매문의:토이#3656")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "테드"){
+    msg.reply("@everyone 테드 구매문의:토이#3656")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "테라"){
+    msg.reply("@everyone 테라 구매문의:토이#3656")
+  }
+})
 client.login(token)
