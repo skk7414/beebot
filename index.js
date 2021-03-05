@@ -51,17 +51,18 @@ client.on("message", (message) => {
     return message.reply("pong")
   }
 
-  if (message.content == "기호") {
+  if (message.content == "핵") {
     let img = "https://cdn.discordapp.com/attachments/762245029691129877/786819408332193833/d.png"
     let embed = new Discord.MessageEmbed()
       .setTitle("꿀벌")
       .setURL("http://www.naver.com")
       .setAuthor("네이버", img, "http://www.naver.com")
       .setThumbnail(img)
-      .addField("꿀벌 카톡링크", "미완료 ")
-      .addField("서버개발자", "해커팀성클킹\n기호\n")
+      .addField("핵툴류", "언로드,카키,우디르,솔,길로틴,테드,테라,오토샷 ")
+      addField("계정류", "랜덤계정,랭전계정")
+      .addField("관리자", "해커팀성클킹\n토이\n")
       .setTimestamp()
-      .setFooter("꿀벌들이 만듬", img)
+      .setFooter("디스코드문의:토이#3656", img)
     message.channel.send(embed)
   } else if (message.content == "!야 토이") {
     let helpImg = "https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png"
