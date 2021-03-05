@@ -217,50 +217,6 @@ if (message.content == "잠수시작") {
 if (message.content == "잠수해제") {
   return message.reply("@everyone 잠수를 해제했습니다")
 }
-if (message.content == "섹스시작") {
-  return message.reply("@everyone 섹스를 시작하셨습니다")
-}
-if (message.content == "섹스종료") {
-  return message.reply("@everyone 섹스를 종료하셨습니다")
-}
-if (message.content == "게임 서든") {
-  return message.reply("@everyone 서든을 시작했습니다")
-}
-if (message.content == "게임 테런") {
-  return message.reply("@everyone 테런을 시작했습니다")
-}
-if (message.content == "언로드") {
-  return message.reply("@everyone 언로드 구매문의:토이#3656")
-}
-if (message.content == "우디르") {
-  return message.reply("@everyone 우디르 구매문의:토이#3656")
-}
-if (message.content == "랜계") {
-  return message.reply("@everyone 랜덤계정 구매문의:토이#3656")
-}
-if (message.content == "솔") {
-  return message.reply("@everyone 솔 구매문의:토이#3656")
-}
-if (message.content == "길로틴") {
-  return message.reply("@everyone 길로틴 구매문의:토이#3656")
-}
-if (message.content == "테드") {
-  return message.reply("@everyone 테드 구매문의:토이#3656")
-}
-if (message.content == "테라") {
-  return message.reply("@everyone 테라 구매문의:토이#3656")
-}
-if (message.content == "카키") {
-  return message.reply("@everyone 카키 구매문의:토이#3656")
-}
-if (message.content == "오토샷") {
-  return message.reply("@everyone 오토샷 구매문의:토이#3656")
-}
-if (message.content == "영구제") {
-  return message.reply("@everyone 영구제 구매문의:토이#3656")
-}
-if (message.content == "핵") {
-  return message.reply("@everyone 언로드,우디르,랜계,솔,길로틴,테드,테라,카키,오토샷 구매문의:토이#3656")
-}
+
 
 client.login(token)
