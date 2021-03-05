@@ -51,7 +51,7 @@ client.on("message", (message) => {
     return message.reply("pong")
   }
 
-  if (message.content == "핵") {
+  if (message.content == "!핵") {
     let img = "https://cdn.discordapp.com/attachments/762245029691129877/786819408332193833/d.png"
     let embed = new Discord.MessageEmbed()
       .setTitle("꿀벌")
@@ -209,5 +209,17 @@ function changeCommandStringLength(str, limitLen = 8) {
   }
 
   return tmp
+}
+if (message.content == "잠수시작") {
+  return message.reply("@everyone 잠수를 시작했습니다")
+}
+if (message.content == "잠수해제") {
+  return message.reply("@everyone 잠수를 해제했습니다")
+}
+if (message.content == "섹스시작") {
+  return message.reply("@everyone 섹스를 시작하셨습니다")
+}
+if (message.content == "섹스종료") {
+  return message.reply("@everyone 섹스를 종료하셨습니다")
 }
 client.login(token)
