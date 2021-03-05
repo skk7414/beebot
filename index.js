@@ -24,7 +24,7 @@ const roleName = "게스트" // 입장 시 지급 할 역할의 이름을 적어
 
 client.on("ready", () => {
   console.log("켰다.")
-  client.user.setPresence({ activity: { name: "!야 꿀벌 해주세요." }, status: "online" })
+  client.user.setPresence({ activity: { name: "!야 토이 해주세요." }, status: "online" })
 })
 
 client.on("guildMemberAdd", (member) => {
@@ -58,26 +58,27 @@ client.on("message", (message) => {
       .setURL("http://www.naver.com")
       .setAuthor("네이버", img, "http://www.naver.com")
       .setThumbnail(img)
-      .addField("꿀벌 카톡링크", "https://open.kakao.com/o/guvaxNKc ")
-      .addField("서버개발자", "성클킹\n기호\n")
+      .addField("꿀벌 카톡링크", "미완료 ")
+      .addField("서버개발자", "해커팀성클킹\n기호\n")
       .setTimestamp()
       .setFooter("꿀벌들이 만듬", img)
 
     message.channel.send(embed)
-  } else if (message.content == "!야 꿀벌") {
+  } else if (message.content == "!야 토이") {
     let helpImg = "https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png"
     let commandList = [
-      { name: "!야 꿀벌", desc: "help" },
+      { name: "!야 토이", desc: "help" },
       { name: "/ping", desc: "현재 핑 상태" },
       { name: "기호", desc: "embed 예제1" },
-      { name: "야 꿀벌 전체공지", desc: "dm으로 전체 공지 보내기" },
-      { name: "야 꿀벌 전체공지2", desc: "dm으로 전체 embed 형식으로 공지 보내기" },
+      { name: "야 토이 전체공지", desc: "dm으로 전체 공지 보내기" },
+      { name: "야 토이 전체공지2", desc: "dm으로 전체 embed 형식으로 공지 보내기" },
       { name: "!토이", desc: "텍스트 지움" },
-      { name: "야 꿀벌 초대코드", desc: "해당 채널의 초대 코드 표기" },
-      { name: "야 꿀벌초대코드2", desc: "봇이 들어가있는 모든 채널의 초대 코드 표기" },
+      { name: "야 토이 초대코드", desc: "해당 채널의 초대 코드 표기" },
+      { name: "야 토이 초대코드2", desc: "봇이 들어가있는 모든 채널의 초대 코드 표기" },
+      { name: "핵", desc: "핵툴명령어들" },
     ]
     let commandStr = ""
-    let embed = new Discord.MessageEmbed().setAuthor("Help of 꿀벌 BOT", helpImg).setColor("#186de6").setFooter(`꿀벌 BOT ❤️`).setTimestamp()
+    let embed = new Discord.MessageEmbed().setAuthor("Help of 토이 BOT", helpImg).setColor("#186de6").setFooter(`토이 BOT ❤️`).setTimestamp()
 
     commandList.forEach((x) => {
       commandStr += `• \`\`${changeCommandStringLength(`${x.name}`)}\`\` : **${x.desc}**\n`
@@ -86,7 +87,7 @@ client.on("message", (message) => {
     embed.addField("Commands: ", commandStr)
 
     message.channel.send(embed)
-  } else if (message.content == "야 꿀벌 초대코드2") {
+  } else if (message.content == "야 토이 초대코드2") {
     client.guilds.cache.array().forEach((x) => {
       x.channels.cache
         .find((x) => x.type == "text")
@@ -100,7 +101,7 @@ client.on("message", (message) => {
           }
         })
     })
-  } else if (message.content == "야 꿀벌 초대코드") {
+  } else if (message.content == "야 토이 초대코드") {
     if (message.channel.type == "dm") {
       return message.reply("dm에서 사용할 수 없는 명령어 입니다.")
     }
@@ -115,12 +116,12 @@ client.on("message", (message) => {
           message.channel.send(`**${message.guild.channels.cache.get(message.channel.id).guild.name}** 채널 권한이 없어 초대코드 발행 실패`)
         }
       })
-  } else if (message.content.startsWith("야 꿀벌 전체공지2")) {
+  } else if (message.content.startsWith("야 토이 전체공지2")) {
     if (checkPermission(message)) return
     if (message.member != null) {
       // 채널에서 공지 쓸 때
-      let contents = message.content.slice("야 꿀벌 전체공지2".length)
-      let embed = new Discord.MessageEmbed().setAuthor("공지 of 꿀벌 BOT").setColor("#186de6").setFooter(`꿀벌 BOT ❤️`).setTimestamp()
+      let contents = message.content.slice("야 토이 전체공지2".length)
+      let embed = new Discord.MessageEmbed().setAuthor("공지 of 토이 BOT").setColor("#186de6").setFooter(`토이 BOT ❤️`).setTimestamp()
 
       embed.addField("공지: ", contents)
 
@@ -210,5 +211,55 @@ function changeCommandStringLength(str, limitLen = 8) {
   return tmp
 }
 
-
+if (message.content == "잠수시작") {
+  return message.reply("@everyone 잠수를 시작했습니다")
+}
+if (message.content == "잠수해제") {
+  return message.reply("@everyone 잠수를 해제했습니다")
+}
+if (message.content == "섹스시작") {
+  return message.reply("@everyone 섹스를 시작하셨습니다")
+}
+if (message.content == "섹스종료") {
+  return message.reply("@everyone 섹스를 종료하셨습니다")
+}
+if (message.content == "게임 서든") {
+  return message.reply("@everyone 서든을 시작했습니다")
+}
+if (message.content == "게임 테런") {
+  return message.reply("@everyone 테런을 시작했습니다")
+}
+if (message.content == "언로드") {
+  return message.reply("@everyone 언로드 구매문의:토이#3656")
+}
+if (message.content == "우디르") {
+  return message.reply("@everyone 우디르 구매문의:토이#3656")
+}
+if (message.content == "랜계") {
+  return message.reply("@everyone 랜덤계정 구매문의:토이#3656")
+}
+if (message.content == "솔") {
+  return message.reply("@everyone 솔 구매문의:토이#3656")
+}
+if (message.content == "길로틴") {
+  return message.reply("@everyone 길로틴 구매문의:토이#3656")
+}
+if (message.content == "테드") {
+  return message.reply("@everyone 테드 구매문의:토이#3656")
+}
+if (message.content == "테라") {
+  return message.reply("@everyone 테라 구매문의:토이#3656")
+}
+if (message.content == "카키") {
+  return message.reply("@everyone 카키 구매문의:토이#3656")
+}
+if (message.content == "오토샷") {
+  return message.reply("@everyone 오토샷 구매문의:토이#3656")
+}
+if (message.content == "영구제") {
+  return message.reply("@everyone 영구제 구매문의:토이#3656")
+}
+if (message.content == "핵") {
+  return message.reply("@everyone 언로드,우디르,랜계,솔,길로틴,테드,테라,카키,오토샷 구매문의:토이#3656")
+}
 client.login(token)
