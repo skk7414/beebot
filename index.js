@@ -237,21 +237,6 @@ if (message.content == "우디르") {
 if (message.content == "랜계") {
   return message.reply("@everyone 랜덤계정 구매문의:토이#3656")
 }
-if (message.content == "솔") {
-  return message.reply("@everyone 솔 구매문의:토이#3656")
-}
-if (message.content == "길로틴") {
-  return message.reply("@everyone 길로틴 구매문의:토이#3656")
-}
-if (message.content == "테드") {
-  return message.reply("@everyone 테드 구매문의:토이#3656")
-}
-if (message.content == "테라") {
-  return message.reply("@everyone 테라 구매문의:토이#3656")
-}
-if (message.content == "카키") {
-  return message.reply("@everyone 카키 구매문의:토이#3656")
-}
 if (message.content == "오토샷") {
   return message.reply("@everyone 오토샷 구매문의:토이#3656")
 }
@@ -259,6 +244,6 @@ if (message.content == "영구제") {
   return message.reply("@everyone 영구제 구매문의:토이#3656")
 }
 if (message.content == "핵") {
-  return message.reply("@everyone 언로드,우디르,랜계,솔,길로틴,테드,테라,카키,오토샷 구매문의:토이#3656")
+  return message.reply("@everyone 언로드,우디르,랜계,오토샷 구매문의:토이#3656")
 }
 client.login(token)
