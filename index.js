@@ -216,10 +216,4 @@ if (message.content == "잠수시작") {
 if (message.content == "잠수해제") {
   return message.reply("@everyone 잠수를 해제했습니다")
 }
-if (message.content == "섹스시작") {
-  return message.reply("@everyone 섹스를 시작하셨습니다")
-}
-if (message.content == "섹스종료") {
-  return message.reply("@everyone 섹스를 종료하셨습니다")
-}
 client.login(token)
