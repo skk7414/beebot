@@ -267,7 +267,7 @@ client.on('message' ,msg=>{
 })
 client.on('message' ,msg=>{
   if(msg.content === "계정"){
-    msg.reply("@everyone 랜덤계정,랭크전게정 구매문의:토이#3656")
+    msg.reply("@everyone 랜덤계정,랭크전계정 구매문의:토이#3656")
   }
 })
 client.login(token)
