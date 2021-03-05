@@ -211,12 +211,5 @@ function changeCommandStringLength(str, limitLen = 8) {
   return tmp
 }
 
-if (message.content == "잠수시작") {
-  return message.reply("@everyone 잠수를 시작했습니다")
-}
-if (message.content == "잠수해제") {
-  return message.reply("@everyone 잠수를 해제했습니다")
-}
-
 
 client.login(token)
